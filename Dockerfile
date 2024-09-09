@@ -11,7 +11,7 @@ RUN apt install -y libglib2.0-0 libgl1
 COPY . .
 
 # Install Swarm Extensions
-RUN cd src\Extensions && git clone https://github.com/Quaggles/SwarmUI-FaceTools.git
+RUN cd src/Extensions && git clone https://github.com/Quaggles/SwarmUI-FaceTools.git
 
 # Install ComfyUI Manager
 RUN cd dlbackend/ComfyUI/custom_nodes && git clone https://github.com/ltdrdata/ComfyUI-Manager.git 
